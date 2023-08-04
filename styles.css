@@ -2,8 +2,8 @@ body {
     background-color: white;
     margin: 1em;
 }
-
-.navbar-pinterest {
+/* Seteando navbar al top de la página*/
+#navbar-pinterest {
     position: fixed;
     top: 0;
     width: 100%;
@@ -38,20 +38,20 @@ body {
 
 }
 
-.pinterest-icon {
+#pinterest-icon {
     padding: 1%;
 }
 
-.notis {
+#notis {
     padding: 1%;
 }
 
-.msj {
+#msj {
     padding: 1%;
 
 }
 
-.profile {
+#profile {
     padding: 1%;
     padding-right: 2%;
     border-radius: 50%;
@@ -77,8 +77,11 @@ body {
 }
 
 
-.content {
+#content {
     margin-top: 80px;
+    columns: 5 300px;
+    column-gap: 5px;
+    
 }
 
 .card-image {
@@ -103,7 +106,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 0;
-    width: 100%;
+    width: 300px;
     height: 100%;
     display: flex;
     opacity: 0;
@@ -111,11 +114,9 @@ body {
     background-color: rgba(0,0,0,.5);
     justify-content: space-around;
     align-items: flex-end;
-    
-
-
 }
 
+/* Añadiendo función hover para mostrar los botones */
 .botones:hover {
     opacity: 1;
 
@@ -152,17 +153,12 @@ body {
     margin-bottom: 1em;
     display: block;
     border-radius: 20px;
-    
 }
 
-.content {
-    column-width: 230px;
-    column-count: 5;
-    column-gap: 18px;
-}
 
+/* Creando media query para ampliar el número de columnas a 8 en vez de 5, ya que la propiedad "columns" es responsiva nativamente */
 @media only screen and (min-width: 1025px) {
-    .content{
+    #content{
         column-count: 8;
     }
 }

@@ -12,28 +12,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <body>
+ <!-- Creando barra de navegación con ID navbar-pinterest. 3 íconos, 2 enlaces e ícono con redirección -->
 <div>
-    <nav class="navbar-pinterest" >
-        <a class="pinterest-icon" href="http://pinterest.com.mx" target="_blank">
+    <nav id="navbar-pinterest" >
+        <a id="pinterest-icon" href="http://pinterest.com.mx" target="_blank">
             <img src="./images/logo.avif" alt="logo" width="35px" height="35px">
         </a>
         <a href="#home" class="home">Home</a>
         <a href="#create" class="create">Create</a>
+ <!-- Creando contenedor e input con clase .finder -->
         <div class="contenedor-finder">
             <input type="text" name="finder" class="finder">
         </div>
-        <a class="notis" href="#notifications">
+ <!-- Creando los 3 íconos con ID's correspondientes -->
+        <a id="notis" href="#notifications">
             <img src="./images/notis.jpg" alt="notis" width="35px" height="35px">
         </a>
-        <a class="msj" href="#messages">
+        <a id="msj" href="#messages">
             <img src="./images/msj2.png" alt="message" width="35px" height="35px" >
         </a>
-        <a class="profile" href="#profile">
+        <a id="profile" href="#profile">
             <img src="./images/profile.png" alt="message" width="35px" height="35px" >
         </a>
     </nav>
 </div>
-<div class="content">
+<main id="content">
     <div class="card-image">
         <img src="https://picsum.photos/300/300.jpg"/>
             <div class="botones">
@@ -395,7 +398,7 @@
         </div>
     </div>
 
-</div>
+</main>
     
 
 </body>
